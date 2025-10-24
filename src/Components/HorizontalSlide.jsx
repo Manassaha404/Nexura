@@ -37,7 +37,7 @@ const HorizontalSlide = ({ title, api_req, id, type, page }) => {
 
   return (
     Details.length > 0 && (
-      <div className="p-5 md:px-20 w-full h-[50vw] md:h-[47vh] relative mt-15 md:mt-0">
+      <div className="p-5 md:px-20 w-full h-[50vw] md:h-[47vh] relative mt-13 md:mt-5">
         {!isMobile && (
           <>
             <div

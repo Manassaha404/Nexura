@@ -9,7 +9,7 @@ const MovieCard = ({ data, type }) => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
   return (
-    <div className='group relative w-[40vw] md:w-[13vw] h-[60vw] md:h-[18vw] rounded-md overflow-hidden bg-zinc-900 transition-all duration-300 hover:scale-135 hover:z-30 shrink-0'>
+    <div className='group relative w-[40vw] md:w-[13vw] h-[50vw] md:h-[18vw] rounded-md overflow-hidden bg-zinc-900 transition-all duration-300 hover:scale-135 hover:z-30 shrink-0'>
       <img
         src={`https://image.tmdb.org/t/p/w500${data.poster_path}`}
         alt={data.title || data.name}
