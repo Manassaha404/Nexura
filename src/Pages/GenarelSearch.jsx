@@ -13,7 +13,7 @@ const GenarelSearch = () => {
 
     const { data } = useContext(SearchContext);
 
-    if (!data || data.length === 0) return <img className='w-[100vw] h-[100vh] object-cover' src="public\output-onlinegiftools.gif" alt="" />;
+    if (!data || data.length === 0) return <img className='w-[100vw] h-[100vh] object-cover' src="\output-onlinegiftools.gif" alt="" />;
     return (
         <div className='w-full h-fit bg-[#00050D] overflow-x-visible md:overflow-hidden'>
             <div

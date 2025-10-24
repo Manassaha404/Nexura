@@ -64,7 +64,7 @@ const Wallpaper = ({ api_req }) => {
 
 
         </div>
-    ) : <img className='w-[100vw] h-[100vh] object-cover' src="public\output-onlinegiftools.gif" alt="" />
+    ) : <img className='w-[100vw] h-[100vh] object-cover' src="\output-onlinegiftools.gif" alt="" />
 }
 
 export default Wallpaper;
