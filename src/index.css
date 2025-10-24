@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+.logo {
+    font-family: "Oswald";
+}
+
+.result-box::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.heading {
+    font-family: "Oswald";
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+
+.swiper,
+.swiper-wrapper
+ {
+    overflow: visible !important;
+} 
+
+/* Mobile-specific adjustment */
+@media (max-width: 1662px) {
+    .swiper {
+        overflow: hidden !important; /* allows swipe */
+    }
+
+    .swiper-wrapper {
+        overflow: visible !important; /* keep visible for slide animation */
+    }
+
+    .swiper-slide {
+        overflow: hidden !important; /* prevents unwanted scroll */
+    }
+}
+
+.slider-title{
+    font-family: "Oswald";
+}
+
+
+
