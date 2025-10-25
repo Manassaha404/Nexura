@@ -8,7 +8,7 @@ const Home = () => {
     window.scrollTo(0, 0);
   })
   return (
-    <div className='w-full h-fit  bg-[#00050D]'>
+    <div className='w-full  min-h-[100vh]  bg-[#00050D]'>
       <Wallpaper api_req={"trending/all/day"}/>
       <HorizontalSlide title={"Treanding Now"} api_req={"trending/all/day"} id={1} type={"all"} page={1}/>
       <HorizontalSlide title={"Top Rated"} api_req={"movie/top_rated"} id={2} type={"movie"} page={1}></HorizontalSlide>

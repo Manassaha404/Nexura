@@ -19,12 +19,12 @@ const MovieCard = ({ data, type }) => {
         <div className='absolute bottom-0 left-0 w-full p-3 bg-black/70 translate-y-full group-hover:translate-y-0 transition-all duration-300'>
           <h1 className='text-white text-base md:text-2xl font-bold truncate'>{data.title || data.name}</h1>
           <div className='flex gap-2 items-center mt-1 text-zinc-300 text-lg'>
-            {type === "movie" ? <RiMovie2Fill /> : <RiTvFill />}
+            {data.media_type === "movie" ? <RiMovie2Fill /> : <RiTvFill />}
             <p>{data.release_date?.slice(0, 4) || data.first_air_date?.slice(0, 4)}</p>
             <p className='text-yellow-300 text-xl font-semibold'>{data.vote_average?.toFixed(1)}</p>
           </div>
 
-          <Link to={`/${type}/${data.id}`} className='mt-3 inline-flex justify-center items-center w-20 h-20 bg-zinc-800 rounded-full hover:bg-white hover:text-black transition-all duration-300'>
+          <Link to={`/${data.media_type}/${data.id}`} className='mt-3 inline-flex justify-center items-center w-20 h-20 bg-zinc-800 rounded-full hover:bg-white hover:text-black transition-all duration-300'>
             <MdOutlineSlideshow className='text-4xl' />
           </Link>
         </div>

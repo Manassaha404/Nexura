@@ -167,6 +167,7 @@ const TvPlay = () => {
                 <div onClick={() => {
                     setPlay((prev) => [prev[0], index + 1]);
                     playMovie();
+                    window.scrollTo(0, 0);
                 }} className="w-[92%] mx-auto h-fit flex bg-[#33373D] md:bg-transparent gap-4 md:p-8 rounded-md transition-all duration-300 hover:bg-[#33373D] cursor-pointer md:-mt-5 mt-2">
                     {!isMobile && <img className="h-[13vw] w-[18vw] object-cover rounded-md" src={`https://image.tmdb.org/t/p/original${val.still_path}`} alt="" />}
                     
