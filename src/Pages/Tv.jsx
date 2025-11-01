@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
 import Wallpaper from "../Components/Wallpaper";
 import HorizontalSlide from "../Components/HorizontalSlide";
+import Footer from "../Components/Footer";
 
 const Home = () => {
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo(0, 0);
-  })
+  });
   return (
-    <div className="w-full h-fit pb-50 bg-[#00050D]">
+    <div className="w-full h-fit pb-[10vh] md:pb-[6vh] bg-[#00050D]">
       <Wallpaper api_req={"tv/top_rated"} />
       <HorizontalSlide
         title={"Treanding Now"}
@@ -81,6 +82,7 @@ const Home = () => {
         type={"tv"}
         page={3}
       ></HorizontalSlide>
+      <Footer />
     </div>
   );
 };

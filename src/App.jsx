@@ -1,6 +1,6 @@
 import Navbar from "./Components/Navbar";
 import { Routes, Route } from "react-router-dom";
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Home from "./Pages/Home";
 import Movie from "./Pages/Movie";
 import Tv from "./Pages/Tv";
@@ -17,7 +17,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 function App() {
   const queryClient = new QueryClient();
-  const isMobile = useMediaQuery({ maxWidth: 768 })
+  const isMobile = useMediaQuery({ maxWidth: 768 });
   if (!isMobile) {
     useLayoutEffect(() => {
       if (typeof window !== "undefined") {
@@ -26,9 +26,9 @@ function App() {
           content: "#smooth-content",
           smooth: 2,
           effects: true,
-          smoothTouch: true,
+          // smoothTouch: true,
           speed: 1.3,
-          ignoreMobileResize: true,
+          // ignoreMobileResize: true,
         });
       }
     }, []);

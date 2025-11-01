@@ -49,5 +49,7 @@ body {
     font-family: "Oswald";
 }
 
-
+::-webkit-scrollbar {
+    display: none;
+}
 
