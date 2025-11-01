@@ -1,16 +1,50 @@
-# React + Vite
+# 🎬 Nexura — Movie & TV Streaming Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Nexura is a modern and responsive web application for browsing and streaming movies and TV shows.  
+Built with **React**, **Swiper.js**, and **React Query**, Nexura offers a seamless cinematic experience with smooth animations, powerful search, and elegant UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## React Compiler
+- 🎥 **Browse Latest Movies & TV Shows**  
+  Explore trending, popular, and newly released titles with visually stunning layouts.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🔍 **Smart Search System**  
+  Instantly search and preview movie or TV show results with dynamic suggestions.
 
-## Expanding the ESLint configuration
+- 🧭 **Modern UI Design**  
+  Inspired by premium streaming platforms with dark theme aesthetics and gradient overlays.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 📱 **Fully Responsive Design**  
+  Optimized for all devices — desktop, tablet, and mobile.
+
+- ⚡ **React Query + Axios Integration**  
+  Efficient data fetching and caching for fast and smooth browsing.
+
+- 🎞️ **Dynamic Hero Banner**  
+  Showcases featured content with a cinematic background and “Watch Now” CTA.
+
+---
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|-----------|---------------|
+| **Frontend** | React, Vite, React Router |
+| **UI/UX** | Tailwind CSS, Swiper.js |
+| **Data Layer** | Axios, React Query |
+| **Icons** | Lucide React, React Icons |
+| **Animations** | Framer Motion |
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run **Nexura** locally:
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/Manassaha404/Nexura.git
