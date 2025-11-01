@@ -60,7 +60,7 @@ const Search = () => {
         ></div>
       )}
       {val[0] && (
-        <div className="Search-bar absolute w-[90%] md:w-[80%] px-10  py-10 bg-[#151B23] left-1/2 -translate-x-1/2 top-15 rounded-md md:top-20 z-9999 flex flex-col items-center justify-center scale-0 opacity-0 ">
+        <div className="Search-bar absolute w-[90%] md:w-[80%] md:px-10  py-10 bg-[#151B23] left-1/2 -translate-x-1/2 top-15 rounded-md md:top-20 z-9999 flex flex-col items-center justify-center scale-0 opacity-0 ">
           <div className="w-full flex justify-center relative items-center">
             <Link
               onClick={() => {
