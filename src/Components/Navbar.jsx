@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { MdOutlineMenu } from "react-icons/md";
 import { useMediaQuery } from "react-responsive";
+import { FaHeart } from "react-icons/fa";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Search from "./Search";
@@ -125,7 +126,19 @@ const Navbar = () => {
             </NavLink>
           </div>
         )}
-        <Search />
+        <div className=" flex gap-5 items-center">
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "bg-white text-black md:text-[3vw] lg:text-[2vw] xl:text-2xl xl:w-fit md:w-fit md:px-2 h-fit xl:h-[3vw] flex items-center justify-center rounded-xl font-semibold transition-all duration-200 opacity-75 shrink-0"
+                : "md:text-[3vw] lg:text-[2vw] xl:text-2xl  h-fit xl:h-[3vw] xl:w-fit md:w-fit md:px-2 flex items-center justify-center rounded-xl font-semibold hover:bg-white hover:text-black transition-all duration-200"
+            }
+            to="/wishlist"
+          >
+            <FaHeart />
+          </NavLink>
+          <Search />
+        </div>
       </nav>
     </div>
   );

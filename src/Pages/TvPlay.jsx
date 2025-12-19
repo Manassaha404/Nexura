@@ -6,8 +6,13 @@ import gsap from "gsap";
 import { TiArrowBack } from "react-icons/ti";
 import HorizontalSlide from "../Components/HorizontalSlide";
 import Footer from "../Components/Footer";
+import { FaHeart } from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa";
+import { useContext } from "react";
+import { WishlistContext } from "../utils/WishlistContext";
 
 const TvPlay = () => {
+  const { wishlist, setWishlist } = useContext(WishlistContext);
   const { id } = useParams();
   const [data, setdata] = useState(null);
   const [video, setvideo] = useState([]);
@@ -24,6 +29,14 @@ const TvPlay = () => {
       year: "numeric",
     });
   }
+
+  const AddWishlist = (data) => {
+    if (wishlist.some(obj => obj.id === data.id)) {
+      setWishlist((prev) => prev.filter(item => item.id !== data.id));
+    } else {
+      setWishlist((prev) => [...prev, data]);
+    }
+  };
   const getSeasonData = async () => {
     try {
       const { data } = await axios.get(`tv/${id}/season/${seasons}`);
@@ -192,6 +205,25 @@ const TvPlay = () => {
             className="w-fit text-sm md:text-2xl h-fit px-4 md:px-7 md:py-4 py-3 bg-[#1A98FF] z-10 flex justify-center items-center rounded-md font-semibold transition-all duration-300 hover:shadow-[0_0_18px_4px_rgba(26,152,255,0.8)]"
           >
             Play Now
+          </button>
+          <button
+            onClick={() => AddWishlist(data)}
+            className="w-fit h-[3.5vw] text-black text-xl md:text-3xl px-4 md:px-7 md:py-4 py-3 bg-[#ffffff] z-10 flex justify-center items-center gap-4 rounded-md font-semibold cursor-pointer"
+          >
+            {data ? (
+              wishlist.some((obj) => obj.id === data.id) ? (
+                <p className="gap-3 w-full flex justify-center items-center">
+                  <FaHeart className="text-red-600" />
+                </p>
+              ) : (
+                <p className="gap-3 w-full flex justify-center items-center">
+                  {" "}
+                  <FaRegHeart className="" />
+                </p>
+              )
+            ) : (
+              ""
+            )}
           </button>
           <button
             onClick={() => {

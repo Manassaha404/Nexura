@@ -7,6 +7,7 @@ import Tv from "./Pages/Tv";
 import MoviePlay from "./Pages/MoviePlay";
 import GenarelSearch from "./Pages/GenarelSearch";
 import TvPlay from "./Pages/TvPlay";
+import Wishlist from "./Pages/Wishlist";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ScrollSmoother } from "gsap/ScrollSmoother";
@@ -45,6 +46,7 @@ function App() {
             <Route path="movies/:id" element={<MoviePlay />} />
             <Route path="tv/:id" element={<TvPlay />} />
             <Route path="tv" element={<Tv />} />
+            <Route path="wishlist" element={<Wishlist/>}></Route>
           </Routes>
         </div>
       </div>
