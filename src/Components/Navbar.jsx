@@ -130,8 +130,8 @@ const Navbar = () => {
           <NavLink
             className={({ isActive }) =>
               isActive
-                ? "bg-white text-black md:text-[3vw] lg:text-[2vw] xl:text-2xl xl:w-fit md:w-fit md:px-2 h-fit xl:h-[3vw] flex items-center justify-center rounded-xl font-semibold transition-all duration-200 opacity-75 shrink-0"
-                : "md:text-[3vw] lg:text-[2vw] xl:text-2xl  h-fit xl:h-[3vw] xl:w-fit md:w-fit md:px-2 flex items-center justify-center rounded-xl font-semibold hover:bg-white hover:text-black transition-all duration-200"
+                ? "bg-white text-black md:text-[3vw] lg:text-[2vw] xl:text-2xl xl:w-fit md:w-fit px-2 py-3 md:px-2 h-fit xl:h-[3vw] flex items-center justify-center rounded-xl font-semibold transition-all duration-200 opacity-75 shrink-0"
+                : "md:text-[3vw] lg:text-[2vw] xl:text-2xl  h-fit xl:h-[3vw] xl:w-fit md:w-fit px-2 py-3 md:px-2 flex items-center justify-center rounded-xl font-semibold hover:bg-white hover:text-black transition-all duration-200"
             }
             to="/wishlist"
           >

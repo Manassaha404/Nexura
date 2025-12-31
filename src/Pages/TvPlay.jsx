@@ -208,7 +208,7 @@ const TvPlay = () => {
           </button>
           <button
             onClick={() => AddWishlist(data)}
-            className="w-fit h-[3.5vw] text-black text-xl md:text-3xl px-4 md:px-7 md:py-4 py-3 bg-[#ffffff] z-10 flex justify-center items-center gap-4 rounded-md font-semibold cursor-pointer"
+            className="w-fit h-[12.5vw] md:h-[3.5vw] text-black text-2xl md:text-3xl px-4 md:px-7 md:py-4 py-3 bg-[#ffffff] z-10 flex justify-center items-center gap-4 rounded-md font-semibold cursor-pointer"
           >
             {data ? (
               wishlist.some((obj) => obj.id === data.id) ? (
